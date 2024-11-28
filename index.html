@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Моя семья</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Навигация -->
+  <nav>
+    <div class="logo">Моя Семья</div>
+    <div class="burger-menu" id="burger-menu">&#9776;</div>
+    <ul class="menu" id="menu">
+      <li><a href="#home">Главная</a></li>
+      <li><a href="#gallery">Галерея</a></li>
+      <li><a href="#videos">Видео</a></li>
+      <li><a href="#contacts">Контакты</a></li>
+    </ul>
+  </nav>
+
+  <!-- Главная -->
+  <header id="home">
+    <div class="parallax">
+      <h1>Добро пожаловать в наш мир!</h1>
+      <p>Семья — это наше вдохновение.</p>
+      <a href="#gallery" class="btn">Посмотреть галерею</a>
+    </div>
+  </header>
+
+  <!-- Галерея -->
+  <section id="gallery" class="section">
+    <h2>Фотогалерея</h2>
+    <div class="gallery">
+      <!-- Добавляем 30 фотографий -->
+      <img src="./images/photo_2024-11-28_22-06-53 (2).jpg" alt="Семейное фото 1">
+      <img src="./images/photo_2024-11-28_22-06-53.jpg" alt="Семейное фото 2">
+      <img src="./images/photo_2024-11-28_22-06-55.jpg" alt="Семейное фото 3">
+      <!-- Повторяем фото (заглушки) -->
+      <img src="./images/photo_2024-11-28_22-06-56 (2).jpg" alt="Семейное фото 4">
+      <img src="./images/photo_2024-11-28_22-06-56.jpg" alt="Семейное фото 5">
+      <!-- Вставляем еще 25 фотографий -->
+      <img src="./images/photo_2024-11-28_22-06-58.jpg" alt="Семейное фото 6">
+      <img src="./images/photo_2024-11-28_22-06-59.jpg" alt="Семейное фото 7">
+      <img src="./images/photo_2024-11-28_22-07-44.jpg" alt="Семейное фото 8">
+      <img src="./images/photo_2024-11-28_22-07-46.jpg" alt="Семейное фото 9">
+      <img src="./images/photo_2024-11-28_22-07-47.jpg" alt="Семейное фото 10">
+      <img src="./images/photo_2024-11-28_22-07-49.jpg" alt="Семейное фото 11">
+      <img src="./images/photo_2024-11-28_22-07-51.jpg" alt="Семейное фото 12">
+      <img src="./images/photo_2024-11-28_22-07-53.jpg" alt="Семейное фото 13">
+      <img src="./images/photo_2024-11-28_22-07-54.jpg" alt="Семейное фото 14">
+      <img src="./images/photo_2024-11-28_22-07-56.jpg" alt="Семейное фото 15">
+      <img src="./images/photo_2024-11-28_22-07-58.jpg" alt="Семейное фото 16">
+      <img src="./images/photo_2024-11-28_22-07-59.jpg" alt="Семейное фото 17">
+      <img src="./images/photo_2024-11-28_22-08-03.jpg" alt="Семейное фото 18">
+      <img src="./images/photo_2024-11-28_22-08-05.jpg" alt="Семейное фото 19">
+      <img src="./images/photo_2024-11-28_22-08-10.jpg" alt="Семейное фото 20">
+      <!-- Добавить остальные фотографии до photo30.jpg -->
+    </div>
+  </section>
+<!-- Всплывающее окно для фотографий -->
+<div class="popup">
+    <span class="close">&times;</span>
+    <img src="" alt="Fullscreen Photo" class="popup-image">
+  </div>
+  
+
+  <!-- Видео -->
+  <section id="videos" class="section">
+    <h2>Видеоархив</h2>
+    <div class="video-container">
+      <!-- Добавляем 4 видео -->
+      <video controls>
+        <source src="./video/IMG_6958.MOV" type="video/mp4">
+        Ваш браузер не поддерживает видео.
+      </video>
+      <video controls>
+        <source src="./video/IMG_6959.MOV" type="video/mp4">
+        Ваш браузер не поддерживает видео.
+      </video>
+
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <footer id="contacts">
+    <h2>Контакты</h2>
+    <form>
+      <input type="text" placeholder="Ваше имя" required>
+      <input type="email" placeholder="Ваш email" required>
+      <textarea placeholder="Ваше сообщение" required></textarea>
+      <button type="submit" class="btn">Отправить</button>
+    </form>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
